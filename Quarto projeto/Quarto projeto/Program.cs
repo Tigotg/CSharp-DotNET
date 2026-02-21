@@ -8,7 +8,7 @@ namespace Quarto_projeto
 {
     internal class Program
     {
-        struct DadosCadastrais_Strcut
+        struct DadosCadastrais_Struct
         {
             public string Nome;
             public string NomeDaRua;
@@ -17,7 +17,7 @@ namespace Quarto_projeto
         };
         static void Main(string[] args)
         {
-            List<DadosCadastrais_Strcut> ListaDeCadastros = new List<DadosCadastrais_Strcut>();
+            List<DadosCadastrais_Struct> ListaDeCadastros = new List<DadosCadastrais_Struct>();
             string opcao;
             do
             {
@@ -27,7 +27,7 @@ namespace Quarto_projeto
                 if(opcao == "c")
                 {
                     //Cadastrar um novo usuário
-                    DadosCadastrais_Strcut dadosCadastrais;
+                    DadosCadastrais_Struct dadosCadastrais;
                     Console.WriteLine("Digite o nome completo:");
                     dadosCadastrais.Nome = Console.ReadLine();
 
